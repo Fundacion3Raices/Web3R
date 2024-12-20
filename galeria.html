@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="description" content="Fundación Tres Raíces - Proyectos comunitarios, educación y apoyo social. Trabajamos por la justicia, igualdad y el bienestar del pueblo venezolano.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif;">
+    <header style="background-color: #1e1e1e; color: #fff; padding: 10px 0; text-align: center;">
+        <h1 style="margin: 0;">Fundación Tres Raíces</h1>
+        <nav>
+            <a href="index.html" style="color: #fff; margin: 0 15px; text-decoration: none;">Inicio</a>
+            <a href="contacto.html" style="color: #fff; margin: 0 15px; text-decoration: none;">Contacto</a>
+            <a href="galeria.html" style="color: #fff; margin: 0 15px; text-decoration: underline;">Galería</a>
+        </nav>
+    </header>
+    <main style="background-color: #a00000; color: #fff; text-align: center; padding: 40px; border-radius: 10px; margin: 40px auto; width: 80%; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);">
+        <h2 style="margin-bottom: 10px; font-size: 2.5em;">Galería</h2>
+        <p style="margin-bottom: 30px; font-size: 1.1em;">Explora nuestros proyectos destacados a través de estas imágenes.</p>
+        <div style="background-color: #fff; border-radius: 10px; padding: 10px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+            <img data-aos="zoom-in" src="img/galeria/imagen1.jpg" alt="Imagen 1" style="width: 100%; max-height: 300px; object-fit: contain; border-radius: 10px; margin-bottom: 10px;">
+            <img data-aos="zoom-in" src="img/galeria/imagen2.jpg" alt="Imagen 2" style="width: 100%; max-height: 300px; object-fit: contain; border-radius: 10px; margin-bottom: 10px;">
+            <img data-aos="zoom-in" src="img/galeria/imagen3.jpg" alt="Imagen 3" style="width: 100%; max-height: 300px; object-fit: contain; border-radius: 10px;">
+        </div>
+    </main>
+    <footer style="background-color: #000; color: #fff; text-align: center; padding: 10px 0;">
+        <p style="margin: 0;">Representación bolivariana y del pueblo venezolano. © 2024 Fundación Tres Raíces</p>
+    </footer>
+    
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800, // Animation duration in milliseconds
+        once: true     // Only animate once
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.createElement("button");
+        toggleButton.textContent = "Modo Alto Contraste";
+        toggleButton.style.position = "fixed";
+        toggleButton.style.top = "10px";
+        toggleButton.style.right = "10px";
+        toggleButton.style.padding = "10px";
+        toggleButton.style.background = "#333";
+        toggleButton.style.color = "#fff";
+        toggleButton.style.border = "none";
+        toggleButton.style.cursor = "pointer";
+
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("high-contrast");
+        });
+
+        document.body.appendChild(toggleButton);
+    });
+</script>
+</body>
+</html>

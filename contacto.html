@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="description" content="Fundación Tres Raíces - Proyectos comunitarios, educación y apoyo social. Trabajamos por la justicia, igualdad y el bienestar del pueblo venezolano.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fundación Tres Raíces</title>
+    <link rel="stylesheet" href="../css/Styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1E1E1E;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            max-height: 70px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffdd00;
+            color: #1e3d59;
+        }
+
+        #contacto {
+            background-color: #8b0000;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contacto h2 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        #contacto p {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #ffffff;
+            outline: none;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #000;
+            color: #ffffff;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffdd00;
+            color: #1e3d59;
+        }
+
+        #redes-sociales {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #redes-sociales h2 {
+            color: #1e3d59;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        #redes-sociales div {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #redes-sociales img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        #redes-sociales img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #006400;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="../img/Logo3R.png" alt="Logo Fundación Tres Raíces">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Raices.html">Raices</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicacion</a></li>
+
+            </ul>
+        </nav>
+    <a href="galeria.html" class="nav-link" class="nav-link">Galería</a>
+</header>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="fade-in">
+        <h2 aria-label="Título secundario">Contáctanos</h2>
+        <p>Si tienes alguna consulta, no dudes en comunicarte con nosotros. Estamos aquí para ayudarte.</p>
+        
+<form data-aos="fade-up" action="https://formsubmit.co/funda3raices@gmail.com" method="POST" id="contact-form">
+    <!-- Formulario -->
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+    </div>
+    <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+    </div>
+    <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+    </div>
+    <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+    </div>
+    
+    <!-- Configuración adicional para seguridad -->
+    <input type="hidden" name="_captcha" value="true"> <!-- reCAPTCHA habilitado -->
+    <input type="hidden" name="_next" value="https://tu-sitio-web.com/gracias.html"> <!-- Redireccionamiento -->
+
+    <!-- Botón de envío -->
+    <button data-aos="zoom-in" type="submit" class="btn">Enviar Mensaje</button>
+</form>
+
+        <div id="form-errors" style="margin-top: 15px;"></div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section id="redes-sociales" class="fade-in">
+        <h2 aria-label="Título secundario">Síguenos en nuestras redes sociales</h2>
+        <div>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@fundacion.3raices" target="_blank">
+                <img src="../img/tiktok.jpg" alt="Tiktok">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/Instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="img/Youtube.jpg" alt="YouTube" class="social-icon">
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Representación bolivariana y del pueblo venezolano. © 2024 Fundación Tres Raíces</p>
+    </footer>
+    <script src="../js/scroll_animation.js"></script>
+    
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800, // Animation duration in milliseconds
+        once: true     // Only animate once
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const inputs = form.querySelectorAll("input, textarea");
+
+        form.addEventListener("submit", function (e) {
+            let isValid = true;
+
+            inputs.forEach(input => {
+                const errorMsg = document.createElement("span");
+                errorMsg.classList.add("error-msg");
+                errorMsg.style.color = "red";
+                errorMsg.style.fontSize = "0.9em";
+                errorMsg.style.display = "block";
+                errorMsg.textContent = "";
+
+                // Clear previous messages
+                const existingError = input.nextElementSibling;
+                if (existingError && existingError.classList.contains("error-msg")) {
+                    existingError.remove();
+                }
+
+                // Validate required fields
+                if (input.hasAttribute("required") && input.value.trim() === "") {
+                    errorMsg.textContent = "Este campo es obligatorio.";
+                    input.after(errorMsg);
+                    isValid = false;
+                }
+
+                // Email format validation
+                if (input.type === "email" && input.value.trim() !== "") {
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(input.value)) {
+                        errorMsg.textContent = "Por favor, introduce un correo válido.";
+                        input.after(errorMsg);
+                        isValid = false;
+                    }
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.createElement("button");
+        toggleButton.textContent = "Modo Alto Contraste";
+        toggleButton.style.position = "fixed";
+        toggleButton.style.top = "10px";
+        toggleButton.style.right = "10px";
+        toggleButton.style.padding = "10px";
+        toggleButton.style.background = "#333";
+        toggleButton.style.color = "#fff";
+        toggleButton.style.border = "none";
+        toggleButton.style.cursor = "pointer";
+
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("high-contrast");
+        });
+
+        document.body.appendChild(toggleButton);
+    });
+</script>
+</body>
+</html>

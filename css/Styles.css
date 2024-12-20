@@ -1,0 +1,247 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1a1a1a; /* Negro elegante */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* Sombra sutil */
+}
+
+header .logo img {
+    max-height: 80px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd00;
+}
+
+/* Banner */
+.banner {
+    background-color: #8B0000; /* Rojo elegante */
+    color: #fff; /* Texto blanco para contraste */
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 2em;
+    position: relative;
+     /* Sombra sutil */
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.banner p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Valores */
+.valores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.valor img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+    transition: transform 0.3s ease;
+}
+
+.valor:hover img {
+    transform: scale(1.1);
+}
+
+.valor h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #3b0000;
+}
+
+.valor p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .valores {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ======= Responsive Design ======= */
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Tablet Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+        font-size: 16px;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .form-group {
+        max-width: 80%;
+    }
+}
+
+/* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+    body {
+        padding: 30px;
+        font-size: 18px;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .form-group {
+        max-width: 60%;
+    }
+}
+
+/* ======= Gallery Styles ======= */
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ======= Navigation Links Styles ======= */
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+}
+
+/* ======= Map Styles ======= */
+.map-container {
+    margin: 20px auto;
+    max-width: 1200px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Dynamic Button Styles ======= */
+.contact-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dynamic-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dynamic-button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}

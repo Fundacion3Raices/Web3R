@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="description" content="Fundación Tres Raíces - Proyectos comunitarios, educación y apoyo social. Trabajamos por la justicia, igualdad y el bienestar del pueblo venezolano.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Fundación Tres Raíces</title>
+    <link rel="stylesheet" href="css/Styles.css">
+    <style>
+        /* Map container styling */
+        #map {
+            height: 500px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Fundación Tres Raíces</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="galeria.html">Galería</a>
+                <a href="ubicacion.html" class="active">Ubicación</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="location-section">
+            <div class="container">
+                <h2 aria-label="Título secundario">Nuestra Ubicación</h2>
+                <p>Encuentra nuestra sede en el siguiente mapa interactivo.</p>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p>Representación bolivariana y del pueblo venezolano. © 2024 Fundación Tres Raíces</p>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            const location = { lat: 10.5000, lng: -66.9167 }; // Replace with desired coordinates
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Fundación Tres Raíces"
+            });
+        }
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.createElement("button");
+        toggleButton.textContent = "Modo Alto Contraste";
+        toggleButton.style.position = "fixed";
+        toggleButton.style.top = "10px";
+        toggleButton.style.right = "10px";
+        toggleButton.style.padding = "10px";
+        toggleButton.style.background = "#333";
+        toggleButton.style.color = "#fff";
+        toggleButton.style.border = "none";
+        toggleButton.style.cursor = "pointer";
+
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("high-contrast");
+        });
+
+        document.body.appendChild(toggleButton);
+    });
+</script>
+</body>
+</html>
